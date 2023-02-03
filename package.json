@@ -11,17 +11,17 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/material": "^5.11.6",
-    "next": "13.1.5",
+    "@emotion/css": "^11.9.0",
+    "@emotion/react": "^11.9.3",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.7",
+    "next": "12.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
-    "@emotion/css": "^11.10.5",
-    "@emotion/server": "^11.10.0",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",

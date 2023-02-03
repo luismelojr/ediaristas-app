@@ -1,28 +1,29 @@
-import React, { PropsWithChildren } from 'react';
 import NextLink, { LinkProps as NextLinkProps } from 'next/link';
 import {
-  ButtonProps,
   Link as MuiLink,
   LinkProps as MuiLinkProps,
+  ButtonProps,
 } from '@mui/material';
 import Router from 'next/router';
+import { PropsWithChildren } from 'react';
 
 export interface LinkProps {
   href: string;
   mui?: MuiLinkProps | ButtonProps;
-  Component?: React.ElementType;
   next?: NextLinkProps;
+  Component?: React.ElementType;
 }
 
 const Link: React.FC<PropsWithChildren<LinkProps>> = ({
   children,
   href,
+  next,
   mui,
   Component = MuiLink,
-  next,
   ...props
 }) => {
   const isNextEnv = Boolean(Router.router);
+
   return isNextEnv ? (
     <NextLink href={href} passHref {...next}>
       <Component {...mui} {...props}>
