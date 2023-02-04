@@ -18,7 +18,8 @@
     "@mui/material": "^5.8.7",
     "next": "12.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-input-mask": "2.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -35,6 +36,7 @@
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
+    "@types/react-input-mask": "3.0.1",
     "babel-loader": "^8.3.0",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
