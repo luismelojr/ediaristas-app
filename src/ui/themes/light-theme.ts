@@ -48,6 +48,25 @@ const theme = createTheme({
   shape: {
     borderRadius: 3,
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none',
+          borderWith: 2,
+          ':hover': {
+            borderWith: 2,
+          },
+        },
+      },
+      variants: [
+        {
+          props: { variant: 'contained', color: 'secondary' },
+          style: { color: 'white' },
+        },
+      ],
+    },
+  },
 });
 
 export default theme;
